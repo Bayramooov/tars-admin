@@ -1,0 +1,19 @@
+{
+  "name": "tars-admin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web admin for TARS-based AI agent bots",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev:start": "env-cmd nodemon server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^11.0.0",
+    "nodemon": "^3.1.14"
+  }
+}
