@@ -21,7 +21,8 @@ docker compose up
 
 ## Environment
 
-| Var       | Default        | Notes                                       |
-| --------- | -------------- | ------------------------------------------- |
-| `PORT`    | `3000`         |                                             |
-| `DB_PATH` | `pyclaudir.db` | Relative (to project root) or absolute path |
+| Var       | Default        | Notes                                                                         |
+| --------- | -------------- | ----------------------------------------------------------------------------- |
+| `PORT`    | `3000`         |                                                                               |
+| `DB_FILE` | `pyclaudir.db` | DB filename inside `DB_DIR`.                                                  |
+| `DB_DIR`  | project root   | Override to point the DB at any location. Required for Docker (bind-mounted). |

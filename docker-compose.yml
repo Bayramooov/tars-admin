@@ -5,4 +5,4 @@ services:
       - "${PORT:-3000}:${PORT:-3000}"
     env_file: .env
     volumes:
-      - ./pyclaudir.db:/app/pyclaudir.db
+      - ${DB_DIR:?DB_DIR is required for Docker}:${DB_DIR}:z

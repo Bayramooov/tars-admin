@@ -2,7 +2,9 @@ const path = require('path');
 const express = require('express');
 const Database = require('better-sqlite3');
 
-const DB_PATH = path.resolve(__dirname, process.env.DB_PATH || 'pyclaudir.db');
+const DB_DIR = path.resolve(__dirname, process.env.DB_DIR || '.');
+const DB_FILE = process.env.DB_FILE || 'pyclaudir.db';
+const DB_PATH = path.resolve(DB_DIR, DB_FILE);
 const PORT = Number(process.env.PORT) || 3000;
 const db = new Database(DB_PATH, { readonly: true });
 
